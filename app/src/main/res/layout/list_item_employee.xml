@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="clickListener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+            name="employee"
+            type="com.ekipa2.o7task.data.Employee"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+android:backgroundTint="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start"
+        >
+
+        <TextView
+            android:id="@+id/employee_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:gravity="start"
+            android:text="@{employee.name}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/employee_gender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Mike" />
+
+
+        <TextView
+            android:id="@+id/employee_gender"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+
+            android:text="@{employee.gender}"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textColor="@color/white"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/employee_name"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:text="Male" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

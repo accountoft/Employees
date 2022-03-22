@@ -1,0 +1,30 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">OUTFIT7</string>
+
+    <!-- Main layout -->
+    <string name="tit_main_f_Gender_txt">Gender</string>
+    <string name="tit_main_f_Employees_txt">Employees</string>
+
+    <!-- Add employee layout -->
+    <string name="add_employee_name_txt">Name</string>
+    <string name="add_employee_birthday_date_txt">Birthday</string>
+    <string name="add_employee_gender_txt">Gender:</string>
+    <string name="add_employee_salary_txt">Salary</string>
+    <string name="add_employee_salary_year_txt">/year</string>
+    <string name="add_employee_insert_btn">Insert</string>
+
+
+    <!-- Analytics layout  -->
+    <string name="analytics_f_title">Analytics</string>
+    <string name="analytics_f_average_age">Average age:</string>
+    <string name="analytics_f_average_age_txt">25</string>
+    <string name="analytics_f_median_age">Median age:</string>
+    <string name="analytics_f_median_age_txt">23</string>
+    <string name="analytics_f_max_salary">Max salary:</string>
+    <string name="analytics_f_max_salary_txt">40000</string>
+    <string name="analytics_f_male_female_ratio">Male : Female ratio:</string>
+    <string name="analytics_f_male_ratio_txt">5</string>
+    <string name="analytics_f_semicolon_txt">:</string>
+    <string name="analytics_f_female_ratio_txt">2</string>
+
+</resources>

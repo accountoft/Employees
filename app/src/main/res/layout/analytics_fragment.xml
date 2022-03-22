@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+    <variable
+    name="viewModel"
+    type="com.ekipa2.o7task.ui.main.AnalyticsViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/margin_start"
+        android:background="@color/purple_500"
+        tools:context=".ui.main.AnalyticsFragment">
+
+        <TextView
+            android:id="@+id/tit_analytics_f_txt_Analytics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/analytics_f_title"
+            android:textSize="25sp"
+            android:layout_marginBottom="@dimen/margin_start"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/AverageAgeView"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/margin_start"
+            android:text="@string/analytics_f_average_age"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@id/AverageAgeViewTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tit_analytics_f_txt_Analytics" />
+
+        <TextView
+            android:id="@+id/AverageAgeViewTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:maxLength="5"
+            android:layout_marginTop="@dimen/margin_start"
+            android:text="@string/analytics_f_average_age_txt"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/AverageAgeView"
+            app:layout_constraintTop_toBottomOf="@+id/tit_analytics_f_txt_Analytics" />
+
+        <TextView
+            android:id="@+id/MedianAgeView"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="@string/analytics_f_median_age"
+            app:layout_constraintEnd_toStartOf="@id/MedianAgeViewTxt"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/AverageAgeView" />
+
+        <TextView
+            android:id="@+id/MedianAgeViewTxt"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:text="@string/analytics_f_median_age_txt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.013"
+            app:layout_constraintStart_toEndOf="@+id/MedianAgeView"
+            app:layout_constraintTop_toBottomOf="@+id/AverageAgeViewTxt" />
+
+        <TextView
+            android:id="@+id/MaxSalaryView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="@string/analytics_f_max_salary"
+            app:layout_constraintEnd_toStartOf="@id/MaxSalaryViewTxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MedianAgeView" />
+
+        <TextView
+            android:id="@+id/MaxSalaryViewTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:text="@string/analytics_f_max_salary_txt"
+            android:maxLength="9"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MaxSalaryView"
+            app:layout_constraintTop_toBottomOf="@+id/MedianAgeViewTxt" />
+
+        <TextView
+            android:id="@+id/MaleFemaleView"
+            android:layout_width="wrap_content"
+            android:textSize="24sp"
+            android:layout_height="wrap_content"
+            android:text="@string/analytics_f_male_female_ratio"
+            app:layout_constraintEnd_toStartOf="@id/RatioViewtxt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MaxSalaryView" />
+
+        <TextView
+            android:id="@+id/RatioViewtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:maxLength="5"
+            android:text="@string/analytics_f_male_ratio_txt"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/MaleFemaleView"
+            app:layout_constraintTop_toBottomOf="@+id/MaxSalaryViewTxt" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
